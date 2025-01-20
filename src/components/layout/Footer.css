@@ -1,0 +1,25 @@
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer p a {
+    color: #f0a500;
+    text-decoration: none;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  
