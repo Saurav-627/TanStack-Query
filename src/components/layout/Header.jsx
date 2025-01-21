@@ -17,6 +17,9 @@ const Header = () => {
             <NavLink to="/rq">FetchRQ</NavLink>
           </li>
           <li>
+            <NavLink to="/create">Create Post</NavLink>
+          </li>
+          <li>
             <NavLink to="/infinite">Infinite</NavLink>
           </li>
         </ul>

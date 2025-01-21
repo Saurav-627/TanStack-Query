@@ -49,6 +49,17 @@ export const updatePost = async (id) => {
   }
 };
 
+//to create post 
+export const createPost = async (data) => {
+  try {
+    const res = await api.post("/posts", data);
+    return res;
+  } catch (error) {
+    console.log(error);
+    
+  }
+}
+
 //infinite scrolling
 
 export const fetchUsers = async ({ pageParams = 1 }) => {

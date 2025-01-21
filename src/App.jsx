@@ -7,6 +7,7 @@ import FetchOld from "./pages/FetchOld";
 import FetchRQ from "./pages/FetchRQ";
 import FetchIndv from "./components/ui/FetchIndv";
 import InfiniteScrolling from "./components/InfiniteScrolling";
+import CreatePost from "./pages/CreatePost";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/rq",
         element: <FetchRQ />,
+      },
+      {
+        path: "/create",
+        element: <CreatePost />,
       },
       {
         path: "/rq/:id",

@@ -1,0 +1,35 @@
+.new-post-container {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.new-post-title {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.new-post-content {
+  color: #34495e;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.new-post-content strong {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.new-post-content p {
+  line-height: 1.6;
+}
+
+.new-post-container {
+  max-width: 600px;
+  margin: 20px auto;
+}

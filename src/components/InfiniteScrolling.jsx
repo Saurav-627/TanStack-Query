@@ -68,7 +68,13 @@ const InfiniteScrolling = () => {
       })}
 
       {/* {isFetchingNextPage && <div>Loading more...</div>} */}
-      <div ref={ref}>{isFetchingNextPage && <div>Loading more...</div>}</div>
+      <div ref={ref}>
+        {isFetchingNextPage
+          ? "Loading more..."
+          : hasNextPage
+          ? "Scroll down to load more"
+          : "No more users"}
+      </div>
     </div>
   );
 };
