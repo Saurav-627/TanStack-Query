@@ -42,8 +42,21 @@ export const deletePost = async (id) => {
 //to update
 export const updatePost = async (id) => {
   try {
-    const res = await api.patch(`/posts/${id}`, {title: "I have updated"});
+    const res = await api.patch(`/posts/${id}`, { title: "I have updated" });
     return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//infinite scrolling
+
+export const fetchUsers = async ({ pageParams = 1 }) => {
+  try {
+    const res = await axios.get(
+      `https://api.github.com/users?per_page=10&page=${pageParams}`
+    );
+    return res.status === 200 ? res.data : [];
   } catch (error) {
     console.log(error);
   }
